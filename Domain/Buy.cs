@@ -2,9 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using aula12_ef_test.Domain;
 
-namespace poo_ap1
+namespace ap2_poo
 {
     public class Buy
     {

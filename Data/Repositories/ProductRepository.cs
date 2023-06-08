@@ -1,7 +1,3 @@
-using ap1_poo.Data.Repositories;
-using ap1_poo.Domain.Interfaces;
-using aula12_ef_test.Domain;
-
 namespace ap2_poo.Data.Repositories
 {
     public class ProductRepository : IProductRepository

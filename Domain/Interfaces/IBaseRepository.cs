@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace aula14_ef_repositories.Domain.Interfaces
+namespace ap2_poo
 {
     public interface IBaseRepository<Entity> where Entity : class
     {

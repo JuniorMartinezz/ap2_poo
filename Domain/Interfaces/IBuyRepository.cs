@@ -2,10 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using aula14_ef_repositories.Domain.Interfaces;
-using poo_ap1;
+using ap2_poo;
 
-namespace ap1_poo.Domain.Interfaces
+namespace ap2_poo
 {
     public interface IBuyRepository : IBaseRepository<Buy>
     {

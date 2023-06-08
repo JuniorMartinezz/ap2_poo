@@ -2,12 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ap2_poo;
 using ap2_poo.Domain;
-using aula12_ef_test.Domain;
 using Microsoft.EntityFrameworkCore;
-using poo_ap1;
 
-namespace ap1_poo.Data.Repositories
+namespace ap2_poo
 {
     public class DataContext : DbContext
     {

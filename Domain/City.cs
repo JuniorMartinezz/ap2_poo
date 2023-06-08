@@ -1,5 +1,3 @@
-using poo_ap1;
-
 namespace ap2_poo.Domain
 {
     public class City

@@ -2,11 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ap1_poo.Data.Repositories;
-using ap1_poo.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace poo_ap1
+namespace ap2_poo
 {
     public class BuyRepository : IBuyRepository
     {

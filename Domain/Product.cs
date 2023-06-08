@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
-using poo_ap1;
 
-namespace aula12_ef_test.Domain
+namespace ap2_poo
 {
     public class Product
     {
