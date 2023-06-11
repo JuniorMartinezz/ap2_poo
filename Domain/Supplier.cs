@@ -13,7 +13,6 @@ namespace ap2_poo
         public string Phone { get; set; }
         public long Cnpj { get; set; }
         public City City { get; set; }
-        public List<Product> Products { get; set; }
 
 /*         public Supplier(string name, string phone, City city, long cnpj)
         {
