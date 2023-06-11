@@ -15,7 +15,7 @@ namespace ap2_poo.Controllers
     {
         private readonly ICityRepository repository;
 
-        public CitiesController(ICityRepository repository)
+        public CitiesController()
         {
             this.repository = new CityRepository();
         }
@@ -24,6 +24,47 @@ namespace ap2_poo.Controllers
         public IEnumerable<City> Get()
         {
             return repository.GetAll();
+        }
+
+        [HttpGet("{id}")]
+        public City Get(int id)
+        {
+            return repository.GetById(id);
+        }
+
+        [HttpPost]
+        public IActionResult Post([FromBody] City item)
+        {
+            repository.Save(item);
+            return Ok(
+                new
+                {
+                    statusCode = 200,
+                    message = "Cadastrado com sucesso",
+                    item
+                }
+            );
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            repository.Delete(id);
+            return Ok(new { statusCode = 200, message = "Cidade excluída com sucesso" });
+        }
+
+        [HttpPut]
+        public IActionResult Put([FromBody] City item)
+        {
+            repository.Update(item);
+            return Ok(
+                new
+                {
+                    statusCode = 200,
+                    message = item.Name + "Cidade atualizada com sucesso",
+                    item
+                }
+            );
         }
     }
 }
